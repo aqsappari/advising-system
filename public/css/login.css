@@ -15,6 +15,8 @@
   height: 100%;
   padding: var(--padding-new-section);
   background: var(--background-color);
+
+  padding-top: 30px;
 }
 
 /* css properties for the logo display */
@@ -29,12 +31,13 @@
 }
 
 .logo {
-  height: 100%;
+  width: clamp(120px, 20vw, 150px);
   aspect-ratio: 1;
+  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.1));
 }
 
 .logo:nth-child(odd) {
-  height: 80%;
+  width: clamp(100px, 15vw, 120px);
 }
 
 /* css properties for the login form */
@@ -45,7 +48,6 @@
   align-items: center;
   width: 100%;
   gap: var(--gap-same-section);
-  border: solid 1px black;
 }
 
 .login-form header {
@@ -54,15 +56,88 @@
 }
 
 .login-form header h1 {
-  font-size: var(--header-font-size);
+  font-size: clamp(20px, 4vw, var(--header-font-size));
   font-weight: 600;
   line-height: var(--line-height);
   color: var(--text-color);
 }
 
 .login-form header h2 {
-  font-size: var(--subheader-font-size);
+  font-size: clamp(18px, 5vw, var(--subheader-font-size));
   font-weight: 500;
   line-height: var(--line-height);
   color: var(--text-color);
+}
+
+.login-form .input-group {
+  width: min(400px, 100%);
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.login-form .input-group:nth-of-type(1) {
+  margin-top: 20px;
+}
+
+.login-form .input-group input {
+  width: 100%;
+  padding: var(--padding-same-section);
+  font-size: var(--default-font-size);
+  border: none;
+  outline: none;
+  color: var(--text-color);
+
+  background: transparent;
+  border-bottom: 3px solid var(--text-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.login-form .input-group label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: var(--small-font-size);
+  color: var(--neutral-color);
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.login-form .input-group input:hover,
+.login-form .input-group input:focus,
+.login-form .input-group input:valid {
+  border-bottom: 3px solid var(--brand-color);
+}
+
+.login-form .input-group input:hover + label {
+  color: var(--brand-color);
+}
+
+.login-form .input-group input:focus + label,
+.login-form .input-group input:valid + label {
+  color: var(--brand-color);
+  top: -10px;
+  font-size: var(--small-font-size);
+}
+
+.login-button {
+  width: min(340px, 80%);
+  padding: 8px 0;
+  font-size: var(--default-font-size);
+  font-weight: 500;
+  color: var(--background-color);
+  background: var(--brand-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  margin-top: 15px;
+  box-shadow: 2px 4px 0 rgba(0, 0, 0);
+}
+
+.login-button:hover {
+  margin-top: 10px;
+  box-shadow: 4px 9px 5px rgba(0, 0, 0, 0.5);
+  background: hsl(0, 59%, 51%);
 }
