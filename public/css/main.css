@@ -1,0 +1,45 @@
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+
+* {
+  font-family: Poppins-Regular;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #a52a2a; /* A deep crimson/maroon */
+  --secondary-color: #ffd700; /* Gold */
+  --background-color: #f8f8f8; /* A very light grey/off-white for a clean background */
+  --text-color: #333; /* Dark grey for readability */
+  --neutral-color: #999; /* Standard neutral grey */
+  --error-color: #e74c3c; /* Keep a standard error red */
+  --success-color: #2ecc71; /* Keep a standard success green */
+  --warning-color: #f1c40f; /* Keep a standard warning yellow */
+  --brand-color: #a52a2a; /* Use the primary crimson for branding */
+
+  --default-font-size: 16px; /* Base font size for the application */
+  --small-font-size: 14px; /* Slightly smaller font size for less important text */
+  --large-font-size: 18px; /* Slightly larger font size for emphasis */
+
+  --header-font-size: 24px; /* Font size for main headers */
+  --subheader-font-size: 20px; /* Font size for subheaders */
+
+  --border-radius: 10px; /* Standard border radius for buttons and inputs */
+
+  --gap-new-section: 20px; /* Gap between new sections */
+  --gap-same-section: 10px; /* Gap between elements in the same section */
+
+  --padding-new-section: 20px; /* Padding for new sections */
+  --padding-same-section: 10px; /* Padding for elements in the same section */
+
+  --line-height: 1.5rem; /* Standard line height for readability */
+}

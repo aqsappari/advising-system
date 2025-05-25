@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  width: 100%;
+  height: 100dvh;
+
+  justify-content: right;
+  background: var(--brand-color);
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(600px, 100%);
+  height: 100%;
+  padding: var(--padding-new-section);
+  background: var(--background-color);
+}
+
+/* css properties for the logo display */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+  gap: var(--gap-same-section);
+  margin: var(--padding-new-section);
+}
+
+.logo {
+  height: 100%;
+  aspect-ratio: 1;
+}
+
+.logo:nth-child(odd) {
+  height: 80%;
+}
+
+/* css properties for the login form */
+.login-form {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: var(--gap-same-section);
+  border: solid 1px black;
+}
+
+.login-form header {
+  padding: var(--padding-same-section);
+  text-align: center;
+}
+
+.login-form header h1 {
+  font-size: var(--header-font-size);
+  font-weight: 600;
+  line-height: var(--line-height);
+  color: var(--text-color);
+}
+
+.login-form header h2 {
+  font-size: var(--subheader-font-size);
+  font-weight: 500;
+  line-height: var(--line-height);
+  color: var(--text-color);
+}
