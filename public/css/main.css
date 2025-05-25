@@ -24,7 +24,6 @@
   --error-color: #e74c3c; /* Keep a standard error red */
   --success-color: #2ecc71; /* Keep a standard success green */
   --warning-color: #f1c40f; /* Keep a standard warning yellow */
-  --brand-color: #a52a2a; /* Use the primary crimson for branding */
 
   --default-font-size: 16px; /* Base font size for the application */
   --small-font-size: 14px; /* Slightly smaller font size for less important text */

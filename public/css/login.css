@@ -4,7 +4,7 @@
   height: 100dvh;
 
   justify-content: right;
-  background: var(--brand-color);
+  background: var(--primary-color);
 }
 
 .login-container {
@@ -24,7 +24,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 80%;
   height: 150px;
   gap: var(--gap-same-section);
   margin: var(--padding-new-section);
@@ -106,16 +106,16 @@
 .login-form .input-group input:hover,
 .login-form .input-group input:focus,
 .login-form .input-group input:valid {
-  border-bottom: 3px solid var(--brand-color);
+  border-bottom: 3px solid var(--primary-color);
 }
 
 .login-form .input-group input:hover + label {
-  color: var(--brand-color);
+  color: var(--primary-color);
 }
 
 .login-form .input-group input:focus + label,
 .login-form .input-group input:valid + label {
-  color: var(--brand-color);
+  color: var(--primary-color);
   top: -10px;
   font-size: var(--small-font-size);
 }
@@ -126,7 +126,7 @@
   font-size: var(--default-font-size);
   font-weight: 500;
   color: var(--background-color);
-  background: var(--brand-color);
+  background: var(--primary-color);
   border: none;
   border-radius: 4px;
   cursor: pointer;
